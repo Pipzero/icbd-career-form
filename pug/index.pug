@@ -1,0 +1,164 @@
+- var root = "http://192.168.1.10:8848";
+//- - var root = "http://localhost:8848";
+
+doctype html
+html
+  include partials/head.pug
+
+  body
+    main#main
+
+      .container.career-application
+        
+        .columns.is-mobile
+
+          .column.is-flex.has-content-left
+            a(href="https://instantcbd.eco").my-4.instantcbd-logo
+              img(src=`${root}/img/icbd-logo-dark.png`, alt="")
+
+          .column.is-flex.has-content-right
+            h1.title.page-title Careers
+
+
+        div.is-flex.is-justify-content-center.mb-6
+          h2.title.is-3.has-text-centered Sales Representative Application
+
+
+        form.job-application(action="apply")
+
+          h4.title.is-6 Name
+          fieldset.fieldset1
+            .columns
+              .column.is-mobile.is-5
+                .field
+                  label.label Surname
+                  input.input(type="text", placeholder="Last Name")
+
+              .column.is-mobile.is-5
+                .field
+                  label.label First Name
+                  input.input(type="text", placeholder="First Name")
+
+              .column.is-mobile.is-2
+                .field
+                  label.label M.I.
+                  input.input(type="text", placeholder="Middle Initial")
+
+            
+
+          h4.title.is-6 Address
+
+          fieldset             
+
+            .columns
+              .column.is-mobile.is-8
+                .field
+                  label.label Steet
+                  input.input(type="text", placeholder="Block Street")
+
+                .field
+                  label.label City / State
+                  input.input(type="text", placeholder="City / State")
+            
+              .column.is-mobile.is-4
+                .field
+                  label.label Apt / Suite #
+                  input.input(type="text", placeholder="Apt / Suite #")
+
+                .field
+                  label.label Postal Code
+                  input.input(type="text", placeholder="Postal Code")
+
+
+
+
+          h4.title.is-6 Contact
+
+          fieldset.fieldset
+
+          
+            .columns.is-multiline
+              .column.is-mobile.is-6
+                .field
+                  label.label Phone
+                  input.input(type="text", placeholder="Phone")
+
+              .column.is-mobile.is-6
+                .field
+                  label.label Mother's Maiden Name
+                  input.input(type="text", placeholder="Mother's Maiden Name")
+            
+              .column.is-mobile.is-8
+                .field
+                  label.label City of Birth
+                  input.input(type="text", placeholder="City of Birth")
+
+              .column.is-mobile.is-12
+                .field
+                  label.label Previous Address
+                  input.input(type="text", placeholder="Previous Address Line 1")
+                .field
+                  input.input(type="text", placeholder="Previous Address Line 2")
+
+            
+
+          h4.title.is-6 Identification (please with image preview)
+
+
+          fieldset.fieldset
+            .columns.is-multiline
+              .column.is-mobile.is-6
+                .field
+                  label.label Government / State issue ID
+                  .file.has-name
+                    input.file-input(type="file",name="id_name")
+                    span.file-cta
+                      span.file-icon
+                        i.fas.fa-upload
+                      span.file-label Choose file...
+                    span.file-name sshot.jpg
+                
+              .column.is-mobile.is-6
+                .field
+                  label.label Social Security Card 
+                  .file.has-name
+                    input.file-input(type="file",name="id_name")
+                    span.file-cta
+                      span.file-icon
+                        i.fas.fa-upload
+                      span.file-label Choose...
+                    span.file-name your_id_photo_sshot.jpg
+                
+              .column.is-mobile.is-6
+                .field
+                  label.label CV
+                  .file.has-name
+                    input.file-input(type="file",name="id_name")
+                    span.file-cta
+                      span.file-icon
+                        i.fas.fa-upload
+                      span.file-label Choose...
+                    span.file-name your_id_photo_sshot.jpg
+
+
+          .field.checkbox.mt-6.mb-6.is-flex.is-justify-content-center
+            input(type="checkbox").mr-4.mt-1
+            | I agree to the
+            a(href="")
+              | &nbsp; terms and conditions
+              
+
+          .field
+            button.submit.button.is-link Submit
+
+          
+        footer.container.mb-4
+          .columns.is-mobile
+            .column.is-6
+              a(href="https://instantcbd.eco") instantCBD Inc. 2020
+            .column.is-6.is-flex.has-content-right
+              .button-group
+                a.link Privacy Policy
+
+    include partials/scripts.pug
+  

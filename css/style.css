@@ -1,0 +1,290 @@
+html {
+  overflow-y: auto;
+  font-size: 14px;
+}
+@media screen and (min-width: 769px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+}
+
+.instantcbd-logo {
+  margin-top: 0.4rem;
+  display: block;
+  width: 200px;
+}
+@media screen and (max-width: 768px) {
+  .instantcbd-logo {
+    width: 150px;
+    margin-left: 0;
+  }
+}
+
+.career-application {
+  width: 320px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 769px) {
+  .career-application {
+    width: 720px;
+  }
+}
+.career-application .hero-head {
+  margin: 0 0 2rem;
+}
+.career-application .page-title {
+  border-right: 2px solid #1a1a1d;
+  line-height: 1;
+  padding: 0rem 0.6rem 0.4rem 0;
+}
+
+form.job-application {
+  width: 100%;
+  margin: 0 0 2rem;
+  padding: 0 0 2rem;
+  border-bottom: 1px solid #aaa;
+}
+form.job-application input.input {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom: 1px dashed #1a1a1d;
+}
+form.job-application .label {
+  width: 100%;
+  margin: 0;
+}
+form.job-application .file {
+  margin-top: 0.4rem;
+}
+form.job-application .submit {
+  width: 100%;
+}
+form.job-application h4.title {
+  margin-bottom: 0.8rem;
+}
+form.job-application fieldset {
+  margin-bottom: 2rem;
+}
+
+.hello {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowwrap;
+  align-items: center;
+  justify-content: top;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 1rem;
+  border-bottom: 4px solid #3273dc;
+  transition: height 0.4s ease 0s, width 0.4s ease 0.4s, background-color 0.4s ease 0s, color 0.4s ease 0s;
+  box-shadow: 0 0.6rem 1.8rem -0.6rem rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  background: white;
+  width: 280px;
+  height: 180px;
+  right: 1.6rem;
+  bottom: 1.6rem;
+}
+@media screen and (max-width: 768px) {
+  .hello {
+    left: 50%;
+    margin-left: -170px;
+    font-size: 1rem;
+    height: 178px;
+    width: 340px;
+  }
+}
+.hello:hover {
+  width: 420px;
+  height: 420px;
+  background-color: #3273dc;
+  color: #eee;
+  transition: height 0.4s ease 0.3s, width 0.4s ease 0s, background-color 0.8s ease 0.3s, color 0.4s ease 0s;
+}
+@media screen and (max-width: 768px) {
+  .hello:hover {
+    width: 340px;
+    height: 380px;
+  }
+}
+.hello:hover .job-photo {
+  height: 200px;
+  background: red;
+  transition: height 0.4s ease 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .hello:hover .job-photo {
+    height: 160px;
+  }
+}
+.hello:hover .job-contact {
+  border-color: #eee;
+  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+}
+.hello:hover .bye {
+  visibility: visible;
+}
+.hello .job-title {
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 768px) {
+  .hello .job-title {
+    font-size: 1.4rem;
+  }
+}
+.hello .job-tagline {
+  font-weight: 500;
+  width: 90%;
+  text-align: center;
+  margin: 0 0 1.2rem;
+  font-size: 1.4rem;
+}
+.hello .job-photo {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.4s ease 0s;
+}
+.hello .job-contact {
+  text-align: center;
+  display: block;
+  width: 200px;
+  font-weight: 600;
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0.6rem 2rem;
+  margin: 1rem 0;
+  border-radius: 32px;
+  bottom: 0.8rem;
+  left: 50%;
+  margin-left: -100px;
+  background: #3273dc;
+  color: #eee;
+  transition: background 0.2s ease 0.4s, color 0.2s ease 0.4s, border-color 0.4s ease 0s;
+}
+.hello .job-contact:hover {
+  color: #3273dc;
+  background: #eee;
+  transition: background 0.4s ease 0s, color 0.4s ease 0s;
+}
+.hello .bye {
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  border-radius: 32px;
+  position: absolute;
+  background: #1a1a1d;
+  width: 32px;
+  height: 32px;
+  right: 16px;
+  top: -16px;
+}
+.hello .bye:hover {
+  height: 36px;
+  width: 36px;
+  right: 14px;
+  top: -18px;
+}
+.hello .bye:active {
+  width: 32px;
+  height: 32px;
+  right: 16px;
+  top: -16px;
+}
+
+.light {
+  background: #ddd;
+  color: #1a1a1d;
+}
+
+.dark {
+  background: #1a1a1d;
+  color: #eee;
+}
+
+.has-content-center, .center-column, .top, .has-content-right, .bottom, .has-content-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-column {
+  flex-direction: column;
+}
+
+.top {
+  align-items: flex-start;
+}
+
+.has-content-right {
+  justify-content: flex-end;
+}
+
+.has-content-bottom {
+  justify-content: end;
+}
+
+.bottom {
+  align-items: flex-end;
+}
+
+.has-content-left {
+  justify-content: flex-start;
+}
+
+footer {
+  margin: 4rem 0 0;
+}
+footer a {
+  color: #1a1a1d;
+}
+
+form {
+  width: 360px;
+}
+
+input, textarea {
+  padding: 10px 12px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.form-control {
+  margin: 0 0 12px;
+}
+.form-control small {
+  display: block;
+  color: #eee;
+  background: #c3073f;
+  padding: 8px 12px;
+  margin: 4px 0 0;
+  border-radius: 4px;
+}
+
+label {
+  margin-right: 12px;
+  display: inline-block;
+  width: 100px;
+}
+
+fieldset {
+  border-radius: 4px;
+  margin: 0 0 0.75rem;
+  padding: 1.2rem 1.6rem 2rem;
+  border: 1px solid #ddd;
+}
+/*# sourceMappingURL=style.css.map */
